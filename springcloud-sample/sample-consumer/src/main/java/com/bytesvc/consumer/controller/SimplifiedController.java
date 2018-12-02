@@ -25,7 +25,7 @@ public class SimplifiedController implements ITransferService {
 	private IAccountService acctService;
 
 	@ResponseBody
-	@RequestMapping(value = "/simplified/transfer", method = RequestMethod.POST)
+	@RequestMapping(value = "/simplified/transfer")
 	@Transactional
 	public void transfer(@RequestParam String sourceAcctId, @RequestParam String targetAcctId, @RequestParam double amount) {
 		this.acctService.decreaseAmount(sourceAcctId, amount);

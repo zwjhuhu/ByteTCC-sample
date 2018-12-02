@@ -3,16 +3,16 @@ server:
 
 eureka:
   instance:
-    hostname: inst2
+    ip-address: 127.0.0.1
   client:
     serviceUrl:
-      defaultZone: http://inst1:7000/eureka/
+      defaultZone: http://127.0.0.1:7000/eureka/
 
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/inst02
+    url: jdbc:mysql://192.168.1.106:3306/inst02
     username: root
-    password: 123456
+    password: zwjhuhu
     driver-class-name: com.mysql.jdbc.Driver
     type: org.apache.commons.dbcp2.BasicDataSource
 #  data:
